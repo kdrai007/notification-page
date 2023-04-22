@@ -54,7 +54,7 @@ body {
 .notificaion-panel > ul {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 0.5rem;
   margin-top: 2rem;
   list-style: none;
 }
@@ -134,7 +134,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 2rem;
+    padding-top: 1rem;
   }
   .notificaion-panel {
     padding: 2rem;
@@ -145,16 +145,16 @@ body {
 }
 @media screen and (min-width: 1000px) {
   .notificaion-panel {
-    width: 65vw;
+    width: 60vw;
   }
 }
 @media screen and (min-width: 1400px) {
   .notificaion-panel {
-    width: 55vw;
+    width: 50vw;
   }
 }
 @media screen and (min-width: 1600px) {
   .notificaion-panel {
-    width: 45vw;
+    width: 40vw;
   }
 }
