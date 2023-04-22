@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap");
+
+:root {
+  --Red: hsl(1, 90%, 64%);
+  --Blue: hsl(219, 85%, 26%);
+
+  /* ### Neutral */
+
+  --White: hsl(0, 0%, 100%);
+  --Very-light-grayish-blue: hsl(210, 60%, 98%);
+  --Light-grayish-blue-1: hsl(211, 68%, 94%);
+  --Light-grayish-blue-2: hsl(205, 33%, 90%);
+  --Grayish-blue: hsl(219, 14%, 63%);
+  --Dark-grayish-blue: hsl(219, 12%, 42%);
+  --Very-dark-blue: hsl(224, 21%, 14%);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  /* background-color: red; */
+  width: 100vw;
+}
+.notificaion-panel {
+  background-color: var(--White);
+  margin: 1rem;
+  font-size: 16px;
+}
+.notificaion-panel > .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header > h2 {
+  font-size: 1.4rem;
+}
+.header > h2 > .unread-num {
+  background-color: var(--Blue);
+  color: var(--White);
+  padding: 5px 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  margin-left: 5px;
+}
+.header > a {
+  text-decoration: none;
+  font-size: 0.8rem;
+  color: var(--Grayish-blue);
+}
+.notificaion-panel > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  list-style: none;
+}
+.noti-list > li > .list-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 0.8rem;
+  border-radius: 10px;
+}
+.noti-list > li > .unread-msg {
+  background-color: #dde7ee7c;
+}
+.list-item > img {
+  width: 50px;
+  object-fit: cover;
+}
+.list-item > .not-detail > p {
+  color: var(--Grayish-blue);
+}
+.list-item > .not-detail > p > b {
+  color: var(--Very-dark-blue);
+}
+.list-item > .not-detail > p > .group {
+  color: var(--Blue);
+  font-weight: 800;
+}
+.list-item > .not-detail > p > .topic {
+  color: var(--Dark-grayish-blue);
+  font-weight: 800;
+}
+.list-item > .not-detail > .time {
+  margin-top: 0.4rem;
+}
+.list-item > .not-detail > .message {
+  margin-top: 1rem;
+  border: 1px solid var(--Dark-grayish-blue);
+  padding: 1rem;
+  color: var(--Grayish-blue);
+}
+.message:hover {
+  background-color: var(--Light-grayish-blue-2);
+  color: var(--Dark-grayish-blue);
+}
+.list-item > .not-detail > .detail-img {
+  color: var(--Grayish-blue);
+  display: flex;
+  gap: 10px;
+}
+.list-item > .not-detail > .detail-img > p b {
+  color: var(--Very-dark-blue);
+}
+.list-item > .not-detail > .detail-img > img {
+  width: 50px;
+  object-fit: cover;
+}
+.clickable {
+  cursor: pointer;
+}
+.clickable:hover {
+  color: var(--Blue) !important;
+}
+
+.unread::after {
+  content: "";
+  background-color: red;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 9999px;
+  margin-left: 5px;
+}
